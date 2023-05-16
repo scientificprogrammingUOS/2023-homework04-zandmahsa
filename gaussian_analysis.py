@@ -2,13 +2,31 @@ import numpy as np
 
 # implement the function gaussian_analysis
 
-def gaussian_analysis():
+def gaussian_analysis(loc, scale, lower_bound, upper_bound):
+   
+    if isinstance(loc, scale, lower_bound, upper_bound, (int, float)):
+        if lower_bound <= upper_bound:
+            array = np.random.normal(loc, scale, size=100)
+            for element in array:
+                if (element <=upper_bound) and (element>=lower_bound):
+                    array=np.array(element)
+                    mean=np.mean(array)
+                    std = np.std(array)
+                else:
+                    pass
+        else:
+            print("check input values")
+        return (mean, std)   
         
-    # delete the NotImplementedError when you write your function.
-    raise NotImplementedError
+    else:
+        print("input is invalid")
 
 
+        
 if __name__ == "__main__":
+        pass
     # use this for your own testing!
 
-    pass
+   # print(gaussian_analysis(4, 5, 0, 8))
+    
+    
