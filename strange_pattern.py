@@ -12,4 +12,5 @@ def strange_pattern(hight, width):
 if __name__ == "__main__":
     # use this for your own testing!
     pass
+
    # strange_pattern(8,8)
