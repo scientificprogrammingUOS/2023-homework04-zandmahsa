@@ -15,7 +15,7 @@ def gaussian_analysis(loc, scale, lower_bound, upper_bound):
                 else:
                     pass
         else:
-            print("check input values")
+            print("input is invalid pleat check the valuse")
         return ((mean, std))   
         
     else:
