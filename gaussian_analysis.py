@@ -27,6 +27,6 @@ if __name__ == "__main__":
         pass
     # use this for your own testing!
 
-   # print(gaussian_analysis(4, 5, 0, 8))
+   # print(gaussian_analysis(0, 3, 1, 3))
     
     
