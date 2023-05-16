@@ -3,8 +3,10 @@ import numpy as np
 # implement the function strange pattern
 
 def strange_pattern():
-    # delete the NotImplementedError when you write your function.
-    raise NotImplementedError
+    array = np.arange(width*hight).reshape(hight, width)
+    mask =  array%3 == 0 
+    return mask
+    
 
 
 if __name__ == "__main__":
