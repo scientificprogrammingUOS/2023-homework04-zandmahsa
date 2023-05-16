@@ -8,7 +8,7 @@ def gaussian_analysis(loc, scale, lower_bound, upper_bound):
         if lower_bound <= upper_bound:
             array = np.random.normal(loc, scale, size=100)
             for element in array:
-                if (element <=upper_bound) and (element>=lower_bound):
+                if (element <=upper_bound) & (element>=lower_bound):
                     array=np.array(element)
                     mean=np.mean(array)
                     std = np.std(array)
