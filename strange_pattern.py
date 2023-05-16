@@ -2,9 +2,9 @@ import numpy as np
 
 # implement the function strange pattern
 
-def strange_pattern(hight, width):
-    array = np.arange(width*hight).reshape(hight, width)
-    mask =  array%3 == 0 
+def strange_pattern(tup):
+    array = np.arange(tup[0]*tup[1]).reshape(tup[0], tup[1])
+    mask =  array%3 == 0
     return mask
 
 if __name__ == "__main__":
