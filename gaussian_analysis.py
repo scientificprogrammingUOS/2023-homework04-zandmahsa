@@ -4,7 +4,7 @@ import numpy as np
 
 def gaussian_analysis(loc, scale, lower_bound, upper_bound):
    
-    if isinstance(loc, scale, lower_bound, upper_bound, (int, float)):
+    if isinstance(loc, (int, float)) & isinstance(scale, (int, float)) & isinstance(lower_bound, (int, float)) & isinstance(upper_bound, (int, float)):
         if lower_bound <= upper_bound:
             array = np.random.normal(loc, scale, size=100)
             for element in array:
